@@ -1,0 +1,110 @@
+
+/* *{border: pink solid 1px;} */
+html{overflow-x:hidden}
+body{
+    margin: 0;
+    width: 100vw;
+    display:flex; 
+    justify-content: center;
+    background-color:#202124 ;
+}
+.screen{
+    background-color:black;
+    border-radius: 20px; 
+    width: 500px; 
+    min-height: 100vh;;
+    margin: 9px;
+    padding: 32px;
+}
+.text {
+    background-color: black;
+    color: chartreuse;
+    font-family:'NanumGothicBold';
+    font-size: 1em;
+    width: 100%;
+    padding: auto;
+    text-align:left;
+    display:inline;
+    line-height: 1.5em;
+    letter-spacing: 2px;
+    
+}
+.empty{
+    width: 100%;
+    height: 40vh;
+    transition:4s linear;
+}
+.image_frame{
+    display:flex; 
+    justify-content: center; 
+    text-align: start;
+    margin-top: 20px;
+}
+.image{
+    font-family: 'Courier New', Courier, monospace;
+    color :chartreuse;
+    font-size: 6px;
+    display:inline-block;
+    line-height: 1.5em;
+}
+.icon {
+    width:300px;
+}
+@media (max-width:576px) {
+    .text{
+        font-family:'Courier New', Courier, monospace;
+        letter-spacing: normal;}
+    .screen{
+        padding: 26px;
+        /* height: 1900px; */
+    }
+    .image{line-height: 1em;}
+}
+
+@keyframes cursor{
+    50%{border-color: transparent;}
+}
+.text{
+    display: table-cell; vertical-align: middle;
+    border-right: 0.3em solid greenyellow;
+    animation: cursor 0.5s ease infinite;
+}
+@keyframes endClick{
+        50%{color: transparent;}
+    }
+    #endBox{
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+        margin-top: 20px;
+    }
+    .endA{
+        width: 300px;
+        height: 30px;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 10px 0px;
+    }
+    .end{
+        width: 150px;
+        height: 30px;
+        color: chartreuse;
+        animation: endClick 2s ease infinite;
+        font-size: 1.1em;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        display: block;
+    }
+    .end:hover{
+        background-color:chartreuse;
+        color: black;
+        padding: 1px 10px;
+        transition: 0.5s;
+        animation: none;
+    }

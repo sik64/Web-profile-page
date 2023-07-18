@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="./part2/favicon.ico">
+<link rel="stylesheet" type="text/css" href='./story.css'>
+<link rel="icon" href="../part2/favicon1.ico">
+<script src="./story_js.js" defer></script>
+
+<title>STORY : 4</title>
+
+
+</head>
+<body>
+<div  class="screen">
+    <div class="text" style="
+        display:inline;
+        line-height: 1.5em;
+        ">
+    </div>
+    
+    <div class="image_frame">
+        <div class="image">
+        </div>
+    </div>
+    <div id="endBox">
+        <a class="endA" >
+        <div class= "end">
+            END
+        </div>
+        </a>
+    
+        <a class="endA" href="../index.html">
+        <div class= "end">
+            Click to HOME
+        </div>
+        </a>
+
+        <div class="empty">   
+        </div>
+    
+    </div>
+
+</div>
+
+<script>
+    const content = 
+    "<   4장   >\n< 두번째 걸음 >\n\n돌고돌아 이곳에 왔다.지금껏 움켜쥐고 있었던 프로그램에 대한 열정으로 빠르게 여러 프로젝트들과 다양한 언어들을 경험했지만 지금까진 겨우 한 발자국 내딛었을 뿐이다. 그 한계는 너무도 명확하다. 지금 내가 갖은 짤막한 지식들론 내 아이디어들을 구현할 수 없다. 구현하지 못하는 아이디어들을 상상만 하는자는 망상가다. 난 이들을 실현하고 혁신가다 되겠다. 그러기 위해선 체계적인 교육과 학습이 필요하다. 그래서 바로 지금 내딛는다 두번째 걸음을."
+    
+    const asciicode = "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNmmMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMh/--:/+odMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMh`.-::+oshNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM/`:/+:+syssMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMo`-::-:+yyodMMMMMMMMNhoyhNMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN/-::--:+syMMMMMMMMMs/::/hMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMy:/ooshhmy+oys//:/hMMMMMMMMMh+//+dMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMNs...--:-.:++ymdssdNMMMMMMMMMMMNo:+dNMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMNdo-.`...--.``--/dh+//omMMMMMMMMMMMyosyymMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMds:..`````...````.-+mso+:-ymMMMMMMMMm::/osNMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMmy/-......```````````.:mmo+h+/shmMMMMMMy`../odMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMNh+:....-..-:````````````.hNs+sh+s//dNMMMM:`-/+hMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMd/...----:ohmM.````````````+mo++yo/..::/oho``.:oMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMm+-.-----/yNMMMM:````````````/mo//o/.``````````.:hMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMmo-.----/odMMMMMMM+````````````-do:.+:`````..```..oNMMMMMMMMMMMMMMMMM\nMMMMMMMMMNs-.---:/ymMMMMMMMMM/`````````````+/-.o/`````-+o+++sNMMMMMMMMMMMMMMMMMM\nMMMMMMMMd/..-::/hNMMMMMMMMMMMs..```..`....-+/-:o/`````-dMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMNo/:::/yNMMMMMMMMMMMMMh.```````````:+:-/o/``````.mMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMh+:+syyNMMMMMMMMMMMMMMN:`````````````-::so-```````oMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMh::+yydMMMMMMMMMMMMMMMM/```````--...```+d/.```````:NMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMmo/ssyNMMMMMMMMMMMMMMM+`..`````.-------ss```````-yMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMmyhNMMMMMMMMMMMMMMMs`..``````....-:-.-`````..+NMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMh``.````````/-..---.````.+dMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMd.```.````````:`...-----yMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMmhyo/.````````````...--+hNMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMo.`````````````...-::smMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMh.`````````````````....:oNMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMy.```````....`````````.--:+mMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMh.``````...-sNmyo/-```.-.--/oNMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMd.``````...-yMMMMMNmo``.`.--:+hMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMNNMMMMMMMMMMNNmNmd-`````...-/dMMMMMMMMMo``...:+/+dMMMMMMMMMMMMMMMMMMMMMM\nMMMmsshNh-/++syso+/:::---.`````..-:sNMMMMMMMMMMN/..:/+::-/dMMMMMMMMMMMMMMMMMMMMM\nMMM:.``::```..````````````````..:omMMMMMMMMMMMMMm+/:...--:+dMMMMMMMMMMMMMMMMMMMM\nMMM/`````.---````````````````.-omMMMMMMMMMMMMMMMMh-```...-/+mMMMMMMMMMMMMMMMMMMM\nMMm:````:osoo+::----..``````-/hMMMMMMMMMMMMMMMMMMMh-````..:/:sNMMMMMMMMMMMMMMMMM\nMN:``-/dNMMMMMMNNNmmmddhysshmMMMMMMMMMMMMMMMMMMMMMMm+.```.-:..+yNMMMMMMMMMMMMMMM\nMs`.+mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMs.```....-:+sdMMMMMMMMMMMMM\nMs-oMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMh:.`````.---:dMMMMMMMMMMMM\nMNhNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNs.````..:sdMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMh-`````-yNMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMd.`````./ohmNMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN.`.:::/:/..:/+shhdNMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM-./:/:-.```````../dMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMh::+yyo/:::+osydNMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\n" 
+
+</script>
+</body>
+</html>                                                                                                 

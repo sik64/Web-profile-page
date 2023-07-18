@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'pixChicago';
+  src: url('/path-to/pixChicago.woff2') format('woff2'),
+       url('/path-to/pixChicago.woff') format('woff'),
+       url('/path-to/pixChicago.ttf')  format('truetype');
+}
+
+body {
+  font-family: 'pixChicago', sans-serif;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WHAT IS STRANGR THINGS</title>
+    <meta charset="utf-8">
+    <style>
+      a{color:black;
+        text-decoration-line: none;}
+      p{font-style: italic;}    
+      h1{font-size: 50px; text-align: center;     }
+      #first{color: red;}
+      .here{color: green;}
+      .saw{color: gray;}
+
+      .button{text-align: center;}
+    </style>
+</head>
+
+<body style="background-color:white; color:black;">
+    <script>
+        document.write(h1.innerWidth())
+    </script>
+    <h1><a href="index.html"><font color='blue'>WHAT'S WEB</font></a></h1>
+    <!-- two button(1) -->
+    <input type="button" value="DAY" onclick=
+    "document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black';
+    ">
+    <!-- two button(2) -->
+    <input type="button" value="NIGHT" onclick=
+    "document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';
+    ">
+
+    <br><br>
+    <!-- one button -->
+    <div class='button'>
+        <input id='night_day' type="button" value="DARK MODE" style="width: 100px" onclick="
+    var taget=document.querySelector('body') 
+    if(document.querySelector('#night_day')
+    .value==='DARK MODE')
+    {taget   .style.backgroundColor='black';
+        taget.style.color='white';
+         document.querySelector('#night_day').value='LIGHT MODE';
+    }else {
+        taget.style.backgroundColor='white';
+        taget.style.color='black';
+    document.querySelector('#night_day').value='DARK MODE';
+    }
+    ">
+    </div>
+    
+    
+    <ol>
+        <li><strong><a href="1.html"class="saw">HTML</a></strong></li>
+        <li><strong><a href="2.html" class="saw" id="first">CSS</a></strong></li>
+        <li><strong><a href="2.html">Javascript</a></strong></li>
+    </ol>
+    <!--
+        <h1><a href="index.html"><font color='red'>WHAT'S WEB</font></a></h1>
+    <ol>
+        <li><strong><a href="1.html"><font color='red'>HTML</font></a></strong></li>
+        <li><strong><a href="2.html"><font color='red'>CSS</font></a></strong></li>
+        <li><strong><a href="2.html"><font color='red'>Javascript</font></a></strong></li>
+    </ol>
+    -->
+
+    <h2>WEB이란 무엇인가?</h2>
+
+    Hypertext Markup Language (HTML) is the standard markyup language for <strong>creating web pages</strong> and <u>web</u> applications.
+    <P>보통 WWW(World Wide Web)이라고 불린다. 제공하는 정보 검색 서비스로 텍스트만 제공했던 기존의 정보 서비스와는 달리 그림, 동화상, 소리 등도 모두 지원하고 있다. 또 하이퍼텍스트 개념을 도입하여 쉽게 원하는 정보와 관련된 정보를 찾아볼 수 있는 특징을 갖고 있다. 그래픽 환경으로 손쉬운 사용법이 현재 인터넷이 급부상하게 된 하나의 원인이다.
+    </P> 
+    <p><strong><a href="https://namu.wiki/w/%EA%B8%B0%EB%AC%98%ED%95%9C%20%EC%9D%B4%EC%95%BC%EA%B8%B0(%EB%AF%B8%EA%B5%AD%20%EB%93%9C%EB%9D%BC%EB%A7%88" target="_blank" title="Go to specification of stranger things">Stranger things</a></strong> is an American science fiction horror drama television series created by the Duffer Brothers and streaming on Netflix. The brothers serve as showrunners and are executive producers along with Shawn Levy and Dan Cohen.</P>
+        
+
+    <img src="web-design-1.jpg" width='45%'>
+    
+    <P><strong><a href="https://namu.wiki/w/%EA%B8%B0%EB%AC%98%ED%95%9C%20%EC%9D%B4%EC%95%BC%EA%B8%B0(%EB%AF%B8%EA%B5%AD%20%EB%93%9C%EB%9D%BC%EB%A7%88" target="_blank" title="Go to specification of stranger things">Stranger things</a></strong> 
+        is the popular series in Netflex. The second season focuses on Will's side effects from being in the Upside Down with its entities crawling into the real world. The third season focuses Eleven and Mike's relationship as the kids continue their battle against the Upside Down entities. The series stars an ensemble cast including Winona Ryder, David Harbour, Finn Wolfhard, Millie Bobby Brown, Gaten Matarazzo, Caleb McLaughlin, Noah Schnapp,Sadie Sink, Natalia Dyer, Charlie Heaton, Joe Keery,Cara Buono and Dacre Montgomery.</p>
+     <input type="button" value="NIGHT" onclick="
+        if(this.value==='NIGHT'){    
+        document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color='white';
+        this.value='DAY';
+        }else {
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black';
+        this.value='NIGHT';
+        }
+        ">
+        <input type="button" value="NIGHT" onclick="
+     if(this.value==='NIGHT'){    
+     document.querySelector('body').style.backgroundColor='black';
+     document.querySelector('body').style.color='white';
+     this.value='DAY';
+     }else {
+     document.querySelector('body').style.backgroundColor='white';
+     document.querySelector('body').style.color='black';
+     this.value='NIGHT';
+      }
+      ">    
+    <div> practice</div>
+    <script>
+        
+        'alist'
+        document.querySelectorAll('a')
+        write
+    </script>
+    
+    <script>
+        function setcolor(color){
+            var alist= document.querySelectorAll('a');
+            var i=0;
+            while(i<alist.length){
+                alist[i].style.color =color;
+                i=i+1
+            }
+        }
+        setcolor(red)
+    </script>
+
+
+</body>
+</html>

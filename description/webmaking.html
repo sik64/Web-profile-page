@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../part2/favicon1.ico">
+    <title>page</title>
+    <link rel="stylesheet" type="text/css" href='./description.css'>
+    <style>
+       @keyframes turn{
+            0%{transform: rotate(0deg);}
+            100%{transform: rotate(360deg);;}
+        }
+        .icon { 
+            width: 120px;
+            border-radius: 30px;
+            margin-top: 40px;
+            
+        }
+        #new:hover{
+            animation: turn 5s infinite linear ;
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <h1>
+           인터렉티브 웹메이킹
+    </h1>
+    <div class="line"></div>
+    <p>개발자들의 취업시장에서 이력서의 형태가 개성을 담을 링크한줄의 프로필 페이지로 대체되어 가고 있음을 알고 저 또한 개발자다운 자기소개서를 만들어 보고자 마음먹었습니다. 
+        기본적인 HTML, CSS 강의를 마친 후 곧 바로 웹페이지 제작에 착수했지만 웹메이킹은 생각보다 디자인적 역량을 많이 요구하는 작업이었습니다. 레이아웃, 색의 조화 이미지파일의 화질문제등 을 어느정도 해결하고자 무채색 레트로컨셉의  구 버전 페이지를 제작했습니다.   
+    </p>
+
+    <div class="box">
+        <div class="title"> Old version</div>
+        <div class="sub_line"></div>
+        <a href="../htdocs백업/old.html" target="_blank" style="text-decoration:none">
+            <img class="icon" src="../page/foggy.png">
+            <div>Click to Original page</div>
+        </a>
+    </div>
+    <p>
+        하지만 기초 설계부터 미디어 쿼리를 고려하지 않고 고정단위로 레이아웃을 구성한 탓에 작업 후반부 적응형 웹을 구현하는데 어려움을 겪었습니다.
+        결국 모두 갈아엎기로 결정했고 지금 보고계신 페이지가 신 버전 입니다.
+    </p>
+
+    
+    <div class="box">
+        <div class="title"> New version</div>
+        <div class="sub_line"></div>
+        <a href="../index.html" target="_blank" style="text-decoration:none">
+            <img id ="new" class="icon" src="../page/face.png">
+            <div>Click to New</div>
+        </a>
+    </div>
+    <p>
+        신 버전의 페이지에서는 미디어쿼리를 위한 세로설계 기반에 편리한 보수를 위해 CSS파일과 JS파일을 통합하고  이미지들의 화질 개선과 매끄러운 애니메이션에 초점을 두고 작업했습니다.   
+    </p>
+    
+
+
+    <div id="endBox">
+        <a class="endA" href="./1118.html">
+        <div class= "end">
+            Click to NEXT
+        </div>
+        </a>
+    
+        <a class="endA" href="../index.html">
+        <div class= "end">
+            Click to HOME
+        </div>
+        </a>
+    </div>
+    
+    </main>
+    
+</body>
+</html>

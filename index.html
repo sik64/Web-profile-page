@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Eunsik</title>
+
+    <link rel="icon" href="./part2/favicon1.ico">
+</head>
+<style>
+    @font-face {
+        font-family: 'mirage';
+        src: 
+            url('./part2/MADE\ Mirage\ Black\ PERSONAL\ USE.otf') format('opentype');
+        }
+    @font-face {
+    font-family: 'nanumgothic';
+    src: 
+        url('./part2/NanumGothic.otf') format('opentype');
+    }
+    @keyframes face-ani{
+        0%{
+            margin-left: 0;
+            transform: rotate(0deg);
+            opacity: 100%;
+        }
+        100%{margin-left:500px;
+            transform: rotate(75deg);
+            opacity: 0%;
+        }
+    }
+
+    @keyframes title-ani{
+        0%{
+            top:0;
+            opacity: 100%;
+        }
+        100%{
+            top: -100px;
+            opacity: 0%;
+        }
+    }
+
+    @keyframes p-ani{
+        0%{
+            opacity: 0%;
+        }
+        100%{
+            opacity: 100%;
+        }
+    }
+
+    /* *{ border: solid 1px yellowgreen;} */
+    *{ color: white; text-align: center;}
+    div {
+        margin: 10px;
+    }
+    body {
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        background-color: #333333;
+    }
+    header{width: 100%;}
+    main {
+        width: 990px;
+
+        /* height: 5000px; */
+        background-color: black;
+    }
+    section{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    h1{
+        position: relative;
+        font-size: 5rem;
+        font-family: 'mirage';
+        animation:title-ani 2.5s reverse 1 ease-in forwards;
+        margin:30px;
+    }
+    .face{
+        animation:face-ani 2.5s reverse 1 ease-in forwards;
+        width: 400px;
+    }
+    .facename{
+        width: 400px;
+        font-family: 'mirage';
+        font-size: 20px;
+
+        animation:p-ani 2s 1s 1 ease-in forwards;
+        opacity: 0;
+    }
+    .facestatements{
+        width: 50%;
+        font-family: 'nanumgothic';
+        line-height: 30px;
+        font-size: 20px;
+        margin: 50px;
+
+        animation:p-ani 3s 1.5s 1 ease-in forwards;
+        opacity: 0;
+    }
+    .step{
+        width:80%;
+        margin: 30px;
+        margin-top: 0px;
+        /* border-bottom:2px solid gray; */
+        font-size: 40px;
+        font-family:'Courier New', Courier, monospace;
+        padding: 0px;
+        margin:0px;
+        padding-top: 15px;
+        background-color: black;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        font-family: 'mirage';
+
+        position: sticky;
+        top:0px;
+
+        /* animation:p-ani 3s 1.5s 1 ease-in forwards; */
+        /* opacity: 0; */
+        z-index: 2;
+    }
+    .line{
+        width: 100%;
+        height: 1px;
+        /* background-color: greenyellow; */
+        margin: 0;
+        margin-top: 15px;
+        background:radial-gradient(white, gray 20%,black 70%);
+
+
+
+
+    }
+    .icongroup{
+        width:80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:20px;
+
+        /* animation:p-ani 3s 1.5s 1 ease-in forwards; */
+        /* opacity: 0; */
+    }
+    .iconpersonal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px;
+        width: 350px;
+    }
+    .iconimg{
+        width: 230px;
+        transition: 1s;
+    }
+    /* .iconimg:hover{
+        width: 80%;
+    } */
+    .iconname{
+        background-color: white;
+        color: black;
+        border-radius: 15px;
+        /* width: 150px; */
+        padding: 0px 10px;
+        min-width: 150px;
+        text-align:center;
+        font-weight: 800;
+
+    }
+    footer{
+        height: 60px;
+        background-color: black;
+        /* width: 70vw; */
+        color:dimgray;
+    }
+    .pickicon{
+        width: 90%;
+        transition: 0.5s;
+    }
+  
+
+    @media (max-width:991px) {
+        main {
+            width:100vw;
+            /* height: 5500px; */
+        }
+        footer{
+            width: 100vw;
+        }
+    }
+
+    @media (max-width:575px) {
+       
+        main {
+            width:100vw;
+            /* height: 5100px; */
+        }
+        h1{
+            width: 100%;
+            font-size: 55px;
+        }
+        .face{
+        width: 300px;
+        }
+        .facename{
+        width: 300px;
+        font-family: 'mirage';
+        font-size: 20px;
+        }
+        .facestatements{
+        width: 85%;
+        font-size: 20px;
+        margin: 50px;
+        }
+        .iconimg{
+        width: 150px;
+        transition: 1s;
+        }
+        .iconpersonal{
+        width: 200px;
+        }
+        footer{
+        height: 60px;
+        /* width: 100vw; */
+        }
+        .pickicon{
+        width: 100%;
+    }
+
+    }
+    @media (max-width:450px) {
+        .facestatements{
+            font-size: 1em;
+        }
+        .line{ height: 2px;
+        }
+        footer{
+            font-size: 1em;
+        }
+        /* .pickicon{
+        width: 70%;
+    } */
+    }
+   
+    
+
+</style>
+<body>
+
+    <main>
+        <section>
+            <h1>Road to <br> Software Engineer</h1>
+            <img class="face" src="./part1/face.png">
+            <div class="facename">Moon Eunsik</div>
+            <div class="facestatements">목표를 정하고 무엇을 배워야할지 부터 정의해 나가며 한발한발 알고리즘을 설계해나가는 능력, 풀리지 않는 문제를 끝내 풀기위해 몰두하는 힘, 이와 같은 개발자마인드는 프로그램 뿐만아니라 삶 전체를 통틀어 항상 정진하는 자세를 유지시켜 줄것이라 믿고 이 길을 걷기로 결심하기 까지의 과정과 작업물을 하나의 컨텐츠로 이곳에 담았습니다.</div>
+            <div>
+                <a class='iconpersonal' href="" style="width: 1px;;">
+                    <img class="iconimg" src=''/>
+                </a>
+            </div>
+
+            <div class="step">step : 1
+                <div class="line"></div>
+            </div>
+            <div class="icongroup">
+                <a class='iconpersonal' href="./STORY/STORY1.html">
+                    <img class="iconimg" src='./part1/book1.png'/>
+                    <div class="iconname">STORY : 1</div>
+                </a>
+
+                <a class='iconpersonal' href="./STORY/STORY2.html">
+                    <img class="iconimg" src='./part1/book2.png'/>
+                    <div class="iconname">STORY : 2</div>
+                </a>
+
+                <a class='iconpersonal' href="./STORY/STORY3.html">
+                    <img class="iconimg" src='./part1/book3.png'/>
+                    <div class="iconname">STORY : 3</div>
+                </a>
+
+                <a class='iconpersonal' href="./DESCRIPTION/talkingwatch.html">
+                    <img class="iconimg" src='./part1/fullmouth.png'/>
+                    <div class="iconname">TALKING WATCH</div>
+                </a>
+
+                <a class='iconpersonal' href="./DESCRIPTION/fastpick.html">
+                    <img class="iconimg" src='./part1/lolicon.png'/>
+                    <div class="iconname">FAST PICK</div>
+                </a>
+
+                <a class='iconpersonal' href="./DESCRIPTION/runningtime.html">
+                    <img class="iconimg" src='./part1/youtubeicon.png'/>
+                    <div class="iconname">RUNNING TIME COUNTER</div>
+                </a>
+
+                <!-- <a class='iconpersonal' href="./STORY/EDUCATION.html">
+                    <img class="iconimg" src='./part1/exc.png'/>
+                    <div class="iconname">EXCEL</div>
+                </a> -->
+
+                <a class='iconpersonal' href="./DESCRIPTION/webscraping.html">
+                    <img class="iconimg" src='./part1/python-logo.png'/>
+                    <div class="iconname">WEB SCRAPING</div>
+                </a>
+
+                <a class='iconpersonal' href="./DESCRIPTION/webmaking.html">
+                    <img class="iconimg" src='./part1/web.png'/>
+                    <div class="iconname">WEB MAKING</div>
+                </a>
+
+                <a class='iconpersonal' href="./STORY/EDUCATION.html">
+                    <img class="iconimg" src='./part1/edu.png'/>
+                    <div class="iconname">EDUCATION</div>
+                </a>
+
+            </div>
+        </section>
+        <section>
+            <div  class="step">step : 2
+                <div class="line"></div>
+            </div>
+            <div class="icongroup">
+                <a class='iconpersonal' href="./STORY/STORY4.html">
+                    <img class="iconimg" src='./part1/book4.png'/>
+                    <div class="iconname">STORY : 4</div>
+                </a>
+
+                <a class='iconpersonal' href="./DESCRIPTION/idea.html">
+                    <img class="iconimg" src='./part1/idea.png'/>
+                    <div class="iconname">IDEA</div>
+                </a>
+            </div>
+        
+        </section>
+        <footer>
+            본 웹페이지는 VSCODE 만을 이용하여 제작되었습니다.
+    
+        </footer>
+    </main>
+    
+    <script>
+        const iconpersonal =document.querySelectorAll('.iconpersonal')
+        const iconimg =document.querySelectorAll('.iconimg')
+        let now;
+    window.addEventListener('scroll',function(){
+            let step;
+            let bounding;
+        for (let i=0; i< iconpersonal.length; i++) {
+            icon =iconpersonal[i];
+            bounding = icon.getBoundingClientRect();
+            // console.log(bounding.top);
+    
+            if (bounding.top > window.innerHeight * 0.2 && bounding.top < window.innerHeight * 0.6){
+                // now.classList.remove('pickicon')
+                if (iconimg[i-1]){
+                    iconimg[i-1].classList.remove('pickicon')
+                }
+                now = iconimg[i];
+                now.classList.add('pickicon')
+                if (iconimg[i+1]){
+                    iconimg[i+1].classList.remove('pickicon')
+                }
+            }
+        }
+    })
+       
+        
+    
+        // window.addEventListener('scroll',function(){
+        //     for (let i=0; i< iconpersonal.length; i++) {
+        //         boundingrect = iconpersonal.getBoundingClientRect();
+        //         console.log(boundingrect)
+        //     }
+        //     let step;
+        //     let boundingrect;
+        // })
+    
+    </script>    
+</body>
+</html>

@@ -1,0 +1,126 @@
+
+@font-face {
+font-family: 'nanumgothic';
+src: 
+    url('./part2/NanumGothic.otf') format('opentype');
+}
+/* *{border: 1px solid green;}  */
+*{text-align: center; color: white;}
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color:#333333;
+}
+main{
+    width: 990px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    
+}
+p {
+    width: 600px;
+    margin-top: 60px;
+    line-height: 2.5em;
+    text-align: left;
+}
+.line{
+width: 100%;
+height: 1px;
+/* background-color: greenyellow; */
+margin: 0;
+background:radial-gradient(white, gray 20%,black 70%);
+}
+.box{
+    width: 100%;
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+    margin:50px 0px;
+}
+.title{
+    margin: 15px;
+    font-size: 24px;
+}
+.sub_line{
+width: 70%;
+height: 1px;
+/* background-color: greenyellow; */
+background:radial-gradient(white, gray 20%,black 70%);
+}
+.content{
+    width: 50%;
+    margin: 30px 0px;
+}
+.content_p{
+    width: 90%;
+    /* height: 500px; */
+    margin: 30px 0px;
+}
+
+img { 
+    width: 70%;
+}
+iframe{
+    margin-top: 50px;;
+}
+.icon{
+    width: 200px;
+    margin: 20px;
+}
+@keyframes endClick{
+    50%{color: transparent;}
+}
+#endBox{
+    /* display: none; */
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.endA{
+    width: 300px;
+    height: 30px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0px;
+}
+.end{
+    width: 150px;
+    height: 30px;
+    color: white;
+    animation: endClick 2s ease infinite;
+    font-size: 1.1em;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    display: block;
+}
+.end:hover{
+    background-color: white;
+    color: black;
+    padding: 1px 10px;
+    transition: 0.5s;
+    animation: none;
+}
+@media (max-width:991px) {
+main {
+    width:100vw; 
+}
+p {
+    width: 80%;
+}
+img { 
+    width: 90%;
+}
+.content{
+    width: 70%;
+}
+
+}

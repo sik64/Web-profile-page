@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aschii_Code</title>
+    <!-- <link href="style.css" rel="stylesheet" type="text/css" /> -->
+
+    <style>
+        *{border: darkorange solid 1px;}
+        .text {
+            background-color: black;
+            color: chartreuse;
+            font-family:'Courier New', Courier, monospace;
+            font-size: 25px;
+            padding: auto;
+            text-align:left;
+
+        }
+        @media screen and (max-width:751px) {
+            body {
+                width: 751px;
+                padding:0;
+                justify-content: start;
+            }
+            .screen {width: 100%;}
+        }
+    </style>
+    <style>
+        @keyframes cursor{
+            50%{border-color: transparent;}
+        }
+        .text{
+            display: table-cell; vertical-align: middle;
+            border-right: 0.3em solid greenyellow;
+            animation: cursor 0.5s ease infinite;
+        }
+        /* .image{
+            display: table-cell; vertical-align: middle;
+            border-right: 0.3em solid greenyellow;
+            animation: cursor 0.5s ease infinite;
+        } */
+    </style>
+</head>
+<body style="
+    height: 100%; 
+    display:flex; 
+    justify-content: center;
+    background-color:#202124 ;
+    ">
+<div  class="screen" style="
+    background-color:black;
+    border-radius: 20px; 
+    width: 40%; 
+    height: 1760px;;
+    min-width: 560px;
+    padding: 30px;
+    ">
+    <div class="text" style="
+    font-size: 1em;
+    display:inline;
+    line-height: 1.5em;
+    "></div>
+    
+    <script>
+    function changeStyle() {
+        document.getElementsByClassName("text")[0].style.borderColor = "transparent";
+        }
+    // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    const content = 
+    "----------------------<   1장   >----------------------\n-------------------< 네모 공화국 >-------------------\n\n때는 2011년, 스티브잡스가  휴대용 컴퓨터를 한 손에 들고 대 스마트폰시대의 개막을 알린지도 벌써 2년이 지난 만큼 개인용컴퓨터의 사용은 이미 만연해 있었다. 1990년 WEB이 발표된지 20년 밖에 지나지 않았다고 하기엔 너무나도 창대한 발전이다. 15살의 나는 그 발전의 과정속에 살고 있었다. WEB은 우리를 이어주었고 PC는 WEB이 보낸 0과1들을 해석해주었다.하지만 기계들이 주고받는 소리없는 아우성 그것들은 내게 닿지 않는다. 그저 내 캐릭터를 해치려 달려오는 저 물체를 내 친구가 조종하고 있다는 것을 인지할 뿐. 그렇게 인터넷게임이 일상으로 자리잡을 무렵 한 게임을 하게 되는데, 메타버스 코인을 타며 폭풍성장한 마인크래프트가 바로 그 것이다.\n\n당시 이 게임은 작은 인디게임에 불과했다.대형 게임사에서 운영하는 게임들과는 달리 네트워크를 구축하는 것은 온전히 개인의 몫이었다.나는 인터넷을 검색해 가며 친구를 내 게임속으로 불러오는 방안을 모색한다. 그렇게 서버파일을 다운받았다. 서버파일은 콘솔창으로 열렸는데 그 곳에서 그 기계들이 내 뒤에서 주고받았던  복잡하지만 정교한 그 언어들을 엿듣게 된다. 나는 생각했다 ' 저들이 무슨말을 하는 지 알고 싶다...' 나는 알고있었다 내말 한마디에 저 세상자체가 좌지우지 될거란걸. 내 생각을 듣기라도 했는지 그들 중 하나가 내게 한마디 건넨다 '여기에 입력하시오...' 나는 소심하게 한마디 한다 'start'. 그렇게 서버와 클라이언트라는 개념에 닿게되었다.\n\n내컴퓨터로 서버를 열고 클라이언트를 호출한다.작지만 강력한 이 능력을 가진 나에게 이 넓은 오픈월드를 둘이서만 즐기기엔 너무도 아쉬웠다. 서버를 확장시키기로 마음먹었다. 도메인을 하나 개설하고 커뮤니티 사이트 이곳저곳에 도메인을 뿌리며 사람을 모았다.그렇게 300명이 내 서버를 거쳐갔고 그 중 스무명 남짓한 사람들은 꾸준히 접속했다. 사람이 모이면 나쁜마음을 먹는 사람이 있기 마련, 나는 서버의 관리자였고 그들은 재제하고 질서를 잡는 것은 나의 책임이다. 나에게는 공부가 필요했다. 다시한번 그들의 언어를 들으러 갔다.몇몇 플러그인들을 다운받고 짤막한 코드 몇줄로 등급과 권한을 부여했다.유저의 움직임을 즉시 중단시키는 기능을 넣고 몇몇 명령어들을 익혔다.이윽고 서버에는 평화가 찾아왔다.\n...................................................\n고등학교 진학시기가 겹치면서 서버는 자연스럽게 문을 닫았다. 하지만 당시 살짝 맛보았던 프로그램의 맛은 고등학교 3학년을 제외한 1,2학년 내내 그 동안 적지 못했던 나의 장례희망란에 '프로그래머'란 다섯글자를 적게 했다.\n"
+    const text = document.querySelector(".text");
+    let i = 0;
+    function typing(){
+        if (i < content.length) {
+        let txt2 = content.charAt(i);
+        text.innerHTML += txt2=== "\n" ? "<br/>": txt2;
+        i++;
+        // if (i >content.length) {changeStyle()}
+    }
+    }
+    // setTimeout(setInterval,1000,typing,10)
+    setInterval(typing, 100)
+    
+    </script>
+    <div class="image_frame" style="
+    display:flex; 
+    justify-content: center; 
+    text-align: start;
+    margin-top: 20px;
+    ">
+    <div class="image" style="
+    font-family: 'Courier New', Courier, monospace;
+    color :chartreuse;
+    font-size: 0.5em;
+    display:inline-block;
+    line-height: 1.5em;
+    ">
+    </div>
+    </div>
+    <script>
+    const asc = "MMMMMMMmo+hmNMMmdmMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMM/.-yysys-.oshmNMMMMMMMMMMMMMMMMMMMMMMMmdhso/+hNMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMd``/oosoo+yhysssydmMMMMMMMMMMMNdhys+/:-......-/+sdMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMNm/`.++yshmhmNNmdhyssyhmMMMMs/:-...............-////ohNMMMMMMMMMMMMMMMMMMMMM\nMMM+--:-oosmmmmmNmshmNNmhyshMMMM-.......--://+oo+.-///////+smMMMMMMMMMMMMMMMMMMM\nMMm``-:+NmmNmmm+o+/+ooydmNmydNMM-`:/++ooososoossoooo////////sMMMMMMMMMMMMMMMMMMM\nMM/`.:-hNdhm++o++o:--:/+oss+oNMN-.+ssssssssso+syysoo/+//////yMMMMMMMMMMMMMMMMMMM\nMm``--/NN/:-.:+o++hms/--/osdmMMNoooso++sssso--ymdssoomh/////yMMMMMMMMMMMMMMMMMMM\nM+`.--hNh--``.//+/hMMMmddNMMMMMNssdm+-:ooo+++osssosdmNN+:///yMMMMMMMMMMMMMMMMMMM\nm``.-/mN/-//.../+++sNMMMMMMMMMMmssyyooo////+//oososdNNN+::/:yMMMMMMMMMMMMMMMMMMM\n+``..yNy-.dMo``-:/:/NMMMMMMMMMMmssso/::oooo/`.+ossodNNNho/:/yMMMMMMMMMMMMMMMMMMM\nh+``.hm/.+MMo-`.-/o/odMMMMMMMMMdoooo-..:--..``/oo+/odmNNNs//hNNNNNmmMMMMMMMMMMMM\nMm``..:--dMMMm``.-::-hMMMMMMMMMdosoo.`````````..````.:oyddhhdddddddmmNMMMMMMMMMM\nMmo::+hMMMMMMd:``.:+//yNMMMMMMMd/::-``````.......---::yysdhhdddddhdmmmNMMMMMMMMM\nMMMMMMMMMMMMMMM/``-::-+MMNmmddhs+...-..--------://+++ohyyhhhhhhhhhmddddNMMMMMMMM\nMMMMMMMMMMMMMMM+```-//:+dmmmmdh/:--:::::::/+ooooooooooysyhyyysssoshddddhMMMMMMMM\nMMMMMMMMMMMMMMMMd``.:shNNmddddds:-/+ooooooooooossoosooy++/////++//+yhdhNNMMMMMMM\nMMMMMMMMMMMMMMNNysyhmNmmmmmdmddd--osssssoosssssssssoosys//++///+//++yhhNNNMMMMMM\nMMMMMMMMMMmdhhyysssssmmmmmmmmmdd:-osssssssssssssssssoshh+///+////////smNNNNMMMMM\nMMMMMMMMMMdsssssssssshmmmmmmmmmh/:osssssssssssssssssssyhyo+/////++++oomNNNNNMMMM\nMMMMMMMMMMMsssssssssssmmmmmmmmmhhmsssssssssssssssssssoyhhsshsoossssssssdNNNNNMMM\nMMMMMMMMMMMdsssssssssoymNmmdhNMMMNsosssssssssssssssssoyhhysmmsssosssssssdNNNNNMM\nMMMMMMMMMMMMysoossooossmmy+-sMMMMNsssssssssssssssssssoyhhhymMNyssssssssssdNNNNMM\nMMMMMMMMMMMMdosssyyyyo::..-:NMMMMNsssssssssssssssssssoyhhhhNMMNyssssssssssdNNNMM\nMMMMMMMMMMMMMmNNNNMMMNds/:/yMMMMMNsosssssssssssssssssoyhdhdNMMMNhssssyyyyyydNNMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNsossssssssssssssssooyhdddNMMMMMdssyyyyyyhhmMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmsssssoooooooo++oossoyhyhdNMMMMMMdhddmmmNNNNMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmo+++++/////////oooooss++omMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMm+////////////////+o++///+mMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMm/:////:::/++++++++++///:+NMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMy+.`````:ooooo+++++/::/:hMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN:````/oooooooooo/:::::sMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMh`.../ssssssoooo/::::::dMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMd/`+yyyyssssss+--:::-+MMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMhyyyssossyy+-------.+mMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMdhhhyyyyyyyo-------.-//dNMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmddddddhhhhs-------..:/shhmMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmddddddddddh:........-//+hhdMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmmmmmmdddddd/.......``.:/ohhNMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmmmmmmmmmmmm+-......````.-shdMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmddddmmmmNNNy-......++/++++oyNMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMdhddddmmmmNNh::-.-../NMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMdhhhddddddddh/::--:.-mMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMd+//::----....-::::::yMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN-`  ``` `````.:::::oMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMh`````````````-:::/NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM+````````````.:::dMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN-````````````-:sMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMh`````````````+NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMo//+ooosyhhhdNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\n......................................................................2장에서 계속"
+    const image = document.querySelector(".image");
+    let ii = 0;
+    function typing2(){
+        if (ii < asc.length) {
+        let txt2 = asc.charAt(ii);
+        image.innerHTML += txt2=== "\n" ? "<br/>": txt2;
+        ii++;
+        // if (i >content.length) {changeStyle()}
+    }
+    }
+    // typing2()
+    setTimeout(changeStyle,142000)
+    setTimeout(setInterval,142000,typing2,0.1)
+    // setInterval(typing, 100)
+    </script>
+
+</div>
+</body>
+</html>

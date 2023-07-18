@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steps of Eunsik</title>
+    <link rel="icon" href="./favicon.ico">
+    <style>
+        @font-face {
+        font-family: 'Blue Screen Personal Use';
+        src:
+        url('./Blue\ Screen\ Personal\ Use/Blue Screen Personal Use.woff2') format('woff2'),
+        url('./Blue\ Screen\ Personal\ Use/Screen Personal Use.woff') format('woff'),
+        url('./Blue\ Screen\ Personal\ Use/Screen Personal Use.ttf')  format('truetype');
+        }
+        @font-face {
+        font-family: 'PPMondwest';
+        src: 
+            url('./Bitmap\ Font\ Pack\ -\ Free\ for\ Personal\ Use/PPMondwest-Regular.otf') format('opentype');
+        }
+        @font-face {
+        font-family: 'Sysfont';
+        src: url('./sysfont/webfonts/sysfont.woff2') format('woff2'),
+        url('./sysfont/webfonts/sysfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        }
+        /* *{ border: 1px solid greenyellow;} */
+        body{
+            margin:0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #333333;
+        }
+        .shadow{
+            width:100%;
+            height:35px;
+            background-color: #333333;
+            position: fixed;
+            top:0;
+            z-index: 4;
+        }
+        header {
+            width: 1100px;
+            height: 25px;
+            position: fixed;
+            top:35px;
+            background-color:whitesmoke;
+            border: black 1px solid;
+            border-top-left-radius:  15px;
+            border-top-right-radius:  15px;
+            display: flex;
+            align-items: center;
+            z-index: 3;
+
+        }
+        .title{
+            margin: 0 0px;
+            font-family: 'Sysfont';
+            font-size: 16px;
+            padding: 4px 13px;
+        }
+        #title_smile{
+            padding: 4px 12px;
+            width:22px;
+        }
+        .title:hover{
+            color:white;
+            background-color: black;
+        }
+        main{
+            width: 1100px;
+            height: 700px;
+            position: fixed;
+            top:60px;
+            background-image: url(./qkxkd.png);
+            background-size: 100%;
+            border: solid 1px black;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            z-index: 0;
+            display: flex;
+            justify-content: center;
+
+        }
+        .center_title{
+            position: relative;
+            font-family: 'Blue Screen Personal Use';
+            font-size: 16px;
+            top:20px;
+            width: 430px;
+            height: 70px;
+            background-image: url(./backgroundtitle.png);
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        #trasure_box{
+            position: absolute; 
+            top: 535px; 
+            left:710px;
+        }
+        #trasure_box2{
+            display: none; 
+        }
+        #chat {
+            width: 110px;
+            height: 230px;
+            position: absolute;
+            top:20px;
+            left:140px;
+            background-image: url(./pop3.png);
+            background-size: contain;
+            display: none;
+            /* display: flex; */
+            writing-mode:vertical-lr;
+            align-items: center;
+            justify-content: center;
+        }
+        #chat_words{
+            line-height: 25px;
+            text-align: left;
+            position: relative;
+            width: 80px;
+            height:200px;
+            top:20px;
+            left: 10px;
+            letter-spacing: 3pt;
+            font-weight: bolder;
+            font-size: 15px;
+            
+        }
+        .screen0{
+            position: absolute;
+            top:115px;
+            left:338px;
+            width: 509px;
+            height: 413px;
+            z-index: 2;
+            background-image: url(./창창.png);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .screen00 {
+            position: absolute;
+            width: 483px;
+            height:360px;
+            top:29px;
+            left:2px;
+            display: flex;
+            justify-content: center;
+
+            
+        }
+        .screen{
+            position: relative;
+            width: 100%;
+            
+        }
+        .screen2{
+            position: absolute;
+            top:284px;
+            left:163px;
+            width: 472px;
+            height: 384px;
+            background-image: url(./창창.png);
+            background-size: 100%;
+            display: flex;
+
+            /* z-index: 8; */
+             
+        }
+        .screen22{
+            width: 448px;
+            height: 335px;
+            position: absolute;
+            top:25px;
+            left:2px;
+            display: flex;
+            align-items: center;
+            
+           
+        }
+        .screen3{
+            width: 100%;
+            height: 100%;
+        }
+        .side0{
+            width: 150px;
+            height: 700px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top:0;
+            left: 0;
+        }
+        #face_img{
+            margin-top: 60px;
+        }
+        #unvelied{
+            width: 60px;
+            text-align: center;
+            font-weight: bolder;
+        }
+        
+        .icon_frame{
+            position:static;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 85px;
+            margin: 30px 0;
+            text-decoration: none;
+            
+        }
+        .icon_img {
+            width:60px;
+        }
+
+        .icon_name{
+            display: inline;
+            font-size: 14px;
+            font-weight: bolder;
+            background-color: white;
+            padding: 0 5px;
+            
+        }
+        /* ############################################## */
+        .side {
+            width:250px;
+            height:2000px;
+            position:relative;
+            top:60px;
+            left:425px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* justify-content: center; */
+            z-index: 1;
+            /* background-image: url(./스르륵ec6a9a175b7deb78674.png); */
+        }
+        .step_line{
+            background-image: url(./titlereal.png);
+            background-size:100%;
+            width: 240px; 
+            height: 25px;
+            color: white;
+            text-align: center;
+            font-size: 18px;
+            font-family: 'Sysfont';
+            margin:30px;
+        }
+        .icon_frame2{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 180px;
+            margin: 40px 0;
+            text-decoration: none;
+            
+        }
+        .icon_img2 {
+            width:60px;
+            margin: 0px,40px;
+            object-fit: contain;
+        }
+
+        .icon_name2{
+            display: inline;
+            font-size: 14px;
+            font-weight: bolder;
+            background-color: white;
+            padding: 0 5px;
+            text-align: center;
+            
+        }
+        .icon_img2:hover{
+            width:85px;
+            transition: 0.5s;
+        }
+        #story5 {
+            margin-top: 20px;
+        }
+        footer{
+            width: 1100px;
+            height: 500px;
+            position:fixed;
+            top:760px;
+            background-color: #333333;
+            z-index: 3;
+            text-align: center;
+            padding: 35px;
+            color:rgb(63, 63, 63);
+        }
+
+        @media (max-width:576px) {
+            body {
+                width: 100vw;
+            }
+            .shadow{
+                position: fixed;
+                height: 30px;
+            }
+            
+            header{
+                position: fixed;
+                width:92vw;
+                top:15px;
+                z-index: 4;
+                
+            }
+            main{
+                width: 92vw;
+                height: 240px;
+                position: fixed;
+                top:40px;
+                border-radius: 0px;
+                flex-direction: column;
+                align-items:center;
+                justify-content: start;
+                background-size: 70%;
+                
+                z-index: 2;
+            }
+            .title{
+                padding:1vw 2vw;
+            }
+            #chat{
+                display:flex;
+            }
+            .center_title{
+                position: relative;
+                display: none;
+            }
+            .side0{
+                position:relative ;
+                left:0px;
+                top:10px;
+                flex-direction: row;
+                width: 92vw;
+                height: 10vh;
+                justify-content: center ;
+            }
+            #face_img{
+                margin:0 20px;
+            }
+            .icon_frame{
+                margin:20px;
+            }
+            footer{
+                top:120vh;
+            }
+            .screen0{
+                position:absolute;
+                top:100px;
+                left:0px;
+                width: 92vw;
+                height: 140px;
+                margin: 0px 0px;;
+                z-index: 0;
+                background-image: url(./backgroundPhone.png);
+                background-size:100% 100%;
+            }
+            .screen00{
+                display: none;
+            }
+            
+            #screen2{
+                display: none;
+            }
+            #trasure_box {
+                display: none;
+            }
+            #trasure_box2 {
+                display: flex;
+                margin-top: 120px;
+                margin-bottom: 20px;
+            }
+            .side {
+                position: relative;
+                top:280px;
+                left:0px;
+                z-index: 1;
+            }
+            .step_line{
+                width: 60vw;
+            }
+            .back_phone{
+                width: 92vw;
+                height: 2700px;
+                background-image: url(./qkxkd.png);
+                background-size: 70%;
+                border: solid 1px black;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                position: fixed;
+                top:40px;
+            }
+            #chat{
+                z-index: 3;
+                writing-mode:inherit;
+                position: relative;
+                top:35px;
+                left:0;
+                background-image: none;
+                color: white;
+                width: 150px;
+                height: 100px;
+            }
+            #chat_words{
+                position:fixed;
+                top:175px;
+                left:35vw;
+                width:200px;
+                height:100px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="shadow">
+</div>
+<header>
+    <img id="title_smile" src="./pavi.png">
+    <div class="title">File</div>
+    <div class="title">Edit</div>
+    <div class="title">View</div>
+    <div class="title">Labal</div>
+    <div class="title">Special</div>
+
+</header>
+<main>
+    <div class="center_title">Steps to developer of Eunsik </div>
+
+    <div class="side0">
+        <a class ="icon_frame" id="face_img">
+            <img class="icon_img"id="foggy_face" src="./흐린얼굴.png">
+            <div class="icon_name" id="unvelied">Veiled</div>
+        </a>
+        <a class ="icon_frame" id="git_icon">
+            <img class="icon_img" id="git_img" src="./giticon .png">
+            <div class="icon_name" id="git_name"> github </div>
+        </a>
+        <a class ="icon_frame" id="rep_icon">
+            <img class="icon_img" id="rep_img" src="./repliticon.png">
+            <div class="icon_name" id="rep_name">Replit</div>
+        </a>
+    </div>
+        <div id="chat">
+            <div id="chat_words"></div>
+            
+        </div>
+
+        <div id ="screen0" class="screen0">
+        <div class="screen00">
+        <img  id="screen" class="screen" src="./strwy.gif" width="60%" >
+        </div>
+        <div class="screen002">
+        </div>
+        </div>
+
+        <div id ="screen2" class="screen2">
+            <div class="screen22">
+            <img id ="screen3" class="screen3" src="./matrix-s.gif" >
+            </div>
+        </div>
+    
+    <div id="trasure_box" class ="icon_frame" >
+        <img src="./trasurebox.png" />
+        <div class="icon_name">
+            ???
+        </div>
+    </div>
+</main>
+<div class="side">
+    <div class="step_line">
+        First step
+    </div>
+    <a class ="icon_frame2" href="./STORY1.html">
+        <img id="story1" class="icon_img2" src="./bookicon (1).png">
+        <div class="icon_name2">Story: 1</div>
+    </a>
+    <a class ="icon_frame2">
+        <img id="story2" class="icon_img2" src="./bookicon (2).png">
+        <div class="icon_name2">Story: 2</div>
+    </a>
+    
+    <a class ="icon_frame2">
+        <img id="story3" class="icon_img2" src="./bookicon (3).png">
+        <div class="icon_name2">Story: 3</div>
+    </a>
+
+    <a class ="icon_frame2">
+        <img class="icon_img2" src="./excelicon.png">
+        <div class="icon_name2">Excel</div>
+    </a>
+
+    <a class ="icon_frame2">
+        <img id="story4"class="icon_img2" src="./bookicon (4).png">
+        <div class="icon_name2">Story: 4</div>
+    </a>
+
+    <a class ="icon_frame2">
+        <img class="icon_img2" src="./pythonlogo.png">
+        <div class="icon_name2">Python</div>
+    </a>
+
+    <a class ="icon_frame2">
+        <img id="aduino" class="icon_img2" src="./aduioicon.png">
+        <div class="icon_name2">Aduino</div>
+    </a>
+
+    <a class ="icon_frame2">
+        <img id="webmaking" class="icon_img2" src="./webicon.png">
+        <div class="icon_name2">Web Making</div>
+    </a>
+
+    <a class ="icon_frame2" href="./EDUCATION.html">
+        <img id="education" class="icon_img2" src="./black_brain.png">
+        <div class="icon_name2">Education</div>
+    </a>
+
+    <div class="step_line">
+        Second step
+    </div>
+    <a class ="icon_frame2" id="story5">
+        <img id="story5img" class="icon_img2" src="./last2_book.png">
+        <div class="icon_name2">Story: final</div>
+    </a>
+
+    <div id="trasure_box2" class ="icon_frame" >
+        <img src="./trasurebox.png" />
+        <div class="icon_name">
+            ???
+        </div>
+    </div>
+    
+    
+
+</div>
+<div class="back_phone"></div>
+<footer>
+    본 웹페이지는 VSCODE 만을 이용하여 제작되었습니다.
+</footer>
+<script>
+// ############################# 스크린 z-index ##############################
+ 
+    const screen2 = document.getElementById('screen2')
+    const screen0 = document.getElementById('screen0')
+
+    function infronts2() {screen2.style.zIndex = 3;}
+    function behinds2() {screen2.style.zIndex = 1;}
+
+    screen2.addEventListener('click',infronts2);
+    screen0.addEventListener('click',behinds2);
+
+    function ins2 (id){id.addEventListener('mouseover',infronts2)};
+    function outs2 (id){id.addEventListener('mouseover',behinds2)};
+
+
+// ###########################얼굴아이콘######################################
+    const screen3 = document.getElementById('screen3')
+
+    const face_img = document.getElementById('face_img')
+    const foggy_face = document.getElementById('foggy_face')
+    const unvelied = document.getElementById('unvelied')
+    
+    function change1() {foggy_face.setAttribute( 'src',"./밝은얼굴.png")}
+    function back1() {foggy_face.setAttribute( 'src','./흐린얼굴.png')}
+    function color1() {unvelied.style.background = "black"}
+    function color_back1() {unvelied.style.background ='white'}
+    function font_color1() {unvelied.style.color ='white'}
+    function font_color_back1() {unvelied.style.color ='black'}
+    function set_name() {unvelied.innerText='문은식'}
+    function set_back_name() {unvelied.innerText='Veiled'}
+    
+
+    face_img.addEventListener('mouseover',change1);
+    face_img.addEventListener('mouseout',back1);
+    face_img.addEventListener('mouseover',color1);
+    face_img.addEventListener('mouseout',color_back1);
+    face_img.addEventListener('mouseover',font_color1);
+    face_img.addEventListener('mouseout',font_color_back1);
+    face_img.addEventListener('mouseover',set_name);
+    face_img.addEventListener('mouseout',set_back_name);
+
+    //#########################말풍선#######################
+    const chat = document.getElementById('chat')
+
+    function chat_on() {chat.style.display ='flex'}
+    function chat_off() {chat.style.display ='none'}
+
+    const content = "반갑습니다 \n 준비된 개발자 \n 문은식 입니다 ";
+    const text = document.querySelector("#chat_words");
+    let i = 0;
+
+    function typing(){
+    let txt = content[i++];
+    text.innerHTML += txt=== "\n" ? "<br/>": txt;
+        if (i > content.length) {
+            text.textContent = "";
+            i = 0;
+        }
+    }
+    setInterval(typing, 100)
+    
+    
+    if (window.innerWidth > 576){
+    face_img.addEventListener('mouseover',chat_on)}
+    if (window.innerWidth > 576){
+    face_img.addEventListener('mouseout',chat_off)}
+    ins2(face_img)
+
+
+// ###########################깃허브 아이콘#########################################
+    const git_icon = document.getElementById('git_icon')
+    const git_img = document.getElementById('git_img')
+    const git_name = document.getElementById('git_name')
+
+    function change2() {git_img.setAttribute( 'src',"./giticon 반전.png")}
+    function back2() {git_img.setAttribute( 'src','./giticon .png')}
+
+    function change_screen3_1() {screen3.setAttribute( 'src',"./github.gif")}
+    function back_screen3_1() {screen3.setAttribute( 'src',"./matrix-s.gif")}
+
+    function color2() {git_name.style.background = "black"}
+    function color_back2() {git_name.style.background ='white'}
+    function font_color2() {git_name.style.color ='white'}
+    function font_color_back2() {git_name.style.color ='black'}
+
+    git_icon.addEventListener('mouseover',change2);
+    git_icon.addEventListener('mouseout',back2);
+    git_icon.addEventListener('mouseover',color2);
+    git_icon.addEventListener('mouseout',color_back2);
+    git_icon.addEventListener('mouseover',font_color2);
+    git_icon.addEventListener('mouseout',font_color_back2);
+    git_icon.addEventListener('mouseover',change_screen3_1);
+    git_icon.addEventListener('mouseout',back_screen3_1);
+    ins2(git_icon)
+
+// ###########################레플릿 아이콘#########################################
+     
+    const rep_icon = document.getElementById('rep_icon')
+    const rep_img = document.getElementById('rep_img')
+    const rep_name = document.getElementById('rep_name')
+
+    function change3() {rep_img.setAttribute( 'src',"./repliticon 반전.png")}
+    function back3() {rep_img.setAttribute( 'src','./repliticon.png')}
+    function color3() {rep_name.style.background = "black"}
+    function color_back3() {rep_name.style.background ='white'}
+    function font_color3() {rep_name.style.color ='white'}
+    function font_color_back3() {rep_name.style.color ='black'}
+
+    function change_screen3_2() {screen3.setAttribute( 'src',"./replit-logo3.gif")}
+    function back_screen3_2() {screen3.setAttribute( 'src',"./matrix-s.gif")}
+
+
+    rep_icon.addEventListener('mouseover',change3);
+    rep_icon.addEventListener('mouseout',back3);
+    rep_icon.addEventListener('mouseover',color3);
+    rep_icon.addEventListener('mouseout',color_back3);
+    rep_icon.addEventListener('mouseover',font_color3);
+    rep_icon.addEventListener('mouseout',font_color_back3);
+    rep_icon.addEventListener('mouseover',change_screen3_2);
+    rep_icon.addEventListener('mouseout',back_screen3_2);
+    ins2(git_icon)
+    ins2(rep_icon)
+
+
+// ###########################아이콘당 스크린화면##########################################
+    
+    function changeimg(a,b,img) {a.addEventListener('mouseover',function() {b.setAttribute( 'src',img)});}
+    function backimg(a,b,img) {a.addEventListener('mouseout',function(){b.setAttribute( 'src',img)});}
+
+    function changeandback(a,b,imgc,imgo){changeimg(a,b,imgc),backimg(a,b,imgo)}
+    
+
+    const screenreal = document.getElementById('screen')
+
+    const story1 = document.getElementById('story1')
+    changeandback(story1,screenreal,"./Ybin.gif","strwy.gif" )
+    outs2 (story1)
+
+    const story2 = document.getElementById('story2')
+    changeandback(story2,screenreal,"./ning.gif","strwy.gif" )
+    outs2 (story2)
+
+    const story3 = document.getElementById('story3')
+    changeandback(story3,screenreal,"./book3.gif","strwy.gif" )
+    outs2 (story3)
+
+    const story4 = document.getElementById('story4')
+    changeandback(story4,screenreal,"./book4.gif","strwy.gif" )
+    outs2 (story4)
+
+    const aduino = document.getElementById('aduino')
+    changeandback(aduino,screenreal,"./aduino.gif","strwy.gif" )
+    outs2 (aduino)
+
+    const webmaking = document.getElementById('webmaking')
+    changeandback(webmaking,screenreal,"./webmoving.gif","strwy.gif" )
+    outs2 (webmaking)
+
+    const education = document.getElementById('education')
+    changeandback(education,screenreal,"./black brain.gif","strwy.gif" )
+    outs2 (education)
+
+    const story5 = document.getElementById('story5img')
+    changeandback(story5,screenreal,"./magicbook.gif","strwy.gif" )
+    outs2 (story5)
+    
+
+
+
+</script>
+
+</body>
+</html>
